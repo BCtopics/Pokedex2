@@ -26,8 +26,8 @@ class PokemonSearchViewController: UIViewController, UISearchBarDelegate {
 
     func updateWith(pokemon: Pokemon) {
         imageView.image = pokemon.image
-        nameLabel.text = pokemon.name
-        idLabel.text = String(pokemon.id)
+        nameLabel.text = "Name: \(pokemon.name)"
+        idLabel.text = "ID: \(pokemon.id)"
     }
     
     //MARK: - IBOutlets

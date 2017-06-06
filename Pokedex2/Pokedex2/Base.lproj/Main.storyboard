@@ -30,16 +30,16 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IaM-nT-hkJ">
-                                <rect key="frame" x="36" y="398" width="303" height="244"/>
+                                <rect key="frame" x="36" y="398" width="303" height="69"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6p-04-6Kx">
-                                        <rect key="frame" x="130.5" y="0.0" width="42" height="122"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6p-04-6Kx">
+                                        <rect key="frame" x="126.5" y="0.0" width="50" height="34.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MG-H5-jkF">
-                                        <rect key="frame" x="130.5" y="122" width="42" height="122"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MG-H5-jkF">
+                                        <rect key="frame" x="141" y="34.5" width="21" height="34.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -57,7 +57,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aoU-7d-fLP" firstAttribute="top" secondItem="xml-rV-38j" secondAttribute="bottom" constant="50" id="2Zg-16-ygO"/>
-                            <constraint firstItem="JW8-qg-UZb" firstAttribute="top" secondItem="IaM-nT-hkJ" secondAttribute="bottom" constant="25" id="3P7-IT-ICp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IaM-nT-hkJ" secondAttribute="trailing" constant="20" id="5fc-tS-bR2"/>
                             <constraint firstItem="Zeg-0f-Lb2" firstAttribute="leading" secondItem="aaw-aE-WWY" secondAttribute="leading" id="6IE-gG-7Lg"/>
                             <constraint firstAttribute="trailing" secondItem="Zeg-0f-Lb2" secondAttribute="trailing" id="Ejx-El-Tr0"/>
@@ -65,6 +64,7 @@
                             <constraint firstItem="IaM-nT-hkJ" firstAttribute="top" secondItem="aoU-7d-fLP" secondAttribute="bottom" constant="25" id="RH4-Oq-oAl"/>
                             <constraint firstItem="Zeg-0f-Lb2" firstAttribute="top" secondItem="xml-rV-38j" secondAttribute="bottom" id="fyT-GC-bpv"/>
                             <constraint firstItem="IaM-nT-hkJ" firstAttribute="leading" secondItem="aaw-aE-WWY" secondAttribute="leadingMargin" constant="20" id="gRf-4M-ZTc"/>
+                            <constraint firstItem="JW8-qg-UZb" firstAttribute="top" secondItem="IaM-nT-hkJ" secondAttribute="bottom" constant="200" id="jfC-a1-9SY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aoU-7d-fLP" secondAttribute="trailing" constant="20" id="k49-bU-OP6"/>
                         </constraints>
                     </view>
