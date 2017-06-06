@@ -14,6 +14,10 @@ class PokemonSearchViewController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
+        searchBar.resignFirstResponder()
+        
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
         guard let search = searchBar.text else { return }
         PokemonController.fetchPokemon(for: search) { (pokemon) in
             guard let pokemon = pokemon else { return }
@@ -21,15 +25,14 @@ class PokemonSearchViewController: UIViewController, UISearchBarDelegate {
             DispatchQueue.main.async {
                 self.updateWith(pokemon: pokemon)
             }
-            
         }
-        
     }
 
     func updateWith(pokemon: Pokemon) {
         imageView.image = pokemon.image
         nameLabel.text = "Name: \(pokemon.name)"
         idLabel.text = "ID: \(pokemon.id)"
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
     
     //MARK: - IBOutlets
