@@ -8,7 +8,13 @@
 
 import UIKit
 
-class PokemonSearchViewController: UIViewController {
+class PokemonSearchViewController: UIViewController, UISearchBarDelegate {
+    
+    //MARK: - UISearchBarDelegate Functions
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+    }
 
     //MARK: - IBOutlets
     
