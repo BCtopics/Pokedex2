@@ -18,7 +18,9 @@ class PokemonSearchViewController: UIViewController, UISearchBarDelegate {
         PokemonController.fetchPokemon(for: search) { (pokemon) in
             guard let pokemon = pokemon else { return }
         
-            self.updateWith(pokemon: pokemon)
+            DispatchQueue.main.async {
+                self.updateWith(pokemon: pokemon)
+            }
             
         }
         
