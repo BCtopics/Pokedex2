@@ -14,8 +14,22 @@ class PokemonSearchViewController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
+        guard let search = searchBar.text else { return }
+        PokemonController.fetchPokemon(for: search) { (pokemon) in
+            guard let pokemon = pokemon else { return }
+        
+            self.updateWith(pokemon: pokemon)
+            
+        }
+        
     }
 
+    func updateWith(pokemon: Pokemon) {
+        imageView.image = pokemon.image
+        nameLabel.text = pokemon.name
+        idLabel.text = String(pokemon.id)
+    }
+    
     //MARK: - IBOutlets
     
     @IBOutlet weak var searchBar: UISearchBar!
